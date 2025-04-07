@@ -5,9 +5,13 @@ A full-stack system for scholar engagement, powered by Next.js (Web), React Nati
 
 scholarserbisyo/
 │
+
 ├── scholarserbisyoadmin/    # Next.js web admin
+
 ├── frontendmobile/          # React Native Expo app
+
 ├── ss_backend/              # Laravel API backend
+
 └── README.md                # Root documentation
 
 🛠️ Tech Stack
@@ -70,6 +74,8 @@ Create .env:
     ENV=http://localhost:8000/api
 
 🧠 3. Backend API (Laravel with Sail)
+
+Install Composer:
 
     composer install
 

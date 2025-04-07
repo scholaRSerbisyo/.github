@@ -3,6 +3,8 @@
 A full-stack system for scholar engagement, powered by Next.js (Web), React Native with Expo (Mobile), and Laravel (Backend).
 🗂️ Project Structure
 
+
+
 scholarserbisyo/
 │
 
@@ -14,15 +16,26 @@ scholarserbisyo/
 
 └── README.md                # Root documentation
 
+
+
 🛠️ Tech Stack
 Layer	Technology
+
 Web Frontend	Next.js (React)
+
 Mobile Frontend	React Native with Expo
+
 Backend	Laravel + Sail (Docker)
+
 Database	MySQL
+
 Auth	Laravel Sanctum / JWT
+
 API	REST
+
 Storage	Cloudflare R2 (S3-like)
+
+
 
 🚀 Getting Started
 📁 Clone the Repositories
@@ -45,6 +58,8 @@ Backend API
 
     cd scholaRSerbisyo_backend
 
+
+
 🔧 Setup Instructions
 
 🌐 1. Web Frontend (Next.js)
@@ -56,6 +71,7 @@ Backend API
 Create .env.local:
 
     ENV=http://localhost:8000
+
 
 📱 2. Mobile Frontend (React Native Expo)
 
@@ -72,6 +88,7 @@ Expo Requirements:
 Create .env:
 
     ENV=http://localhost:8000/api
+
 
 🧠 3. Backend API (Laravel with Sail)
 
@@ -147,9 +164,11 @@ Create your .env file and configure like so:
 
 🔐 Note: Never commit real credentials. Use .env.example for sharing environment config templates.
 
+
 🧱 Run Migrations
 
     ./vendor/bin/sail artisan migrate
+
 
 🌱 Run Seeders
 
@@ -170,6 +189,7 @@ Includes:
 Run individual seeders if needed:
 
     ./vendor/bin/sail artisan db:seed --class=UserRolesSeeder
+
 
 🧪 Run Backend Tests
 

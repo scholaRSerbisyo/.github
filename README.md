@@ -25,17 +25,21 @@ Storage	Cloudflare R2 (S3-like)
 
 Web Admin
 git clone https://github.com/scholaRSerbisyo/scholaRSerbisyo_web_admin.git
+
 cd scholaRSerbisyo_web_admin
 
 Mobile App
 git clone https://github.com/scholaRSerbisyo/frontend_mobile.git
+
 cd frontend_mobile
 
 Backend API
 git clone https://github.com/scholaRSerbisyo/scholaRSerbisyo_backend.git
+
 cd scholaRSerbisyo_backend
 
 🔧 Setup Instructions
+
 🌐 1. Web Frontend (Next.js)
 
 cd scholarserbisyoadmin
@@ -43,9 +47,11 @@ npm install
 npm run dev
 
 Create .env.local:
+
 ENV=http://localhost:8000
 
 📱 2. Mobile Frontend (React Native Expo)
+
 cd frontendmobile
 npm install
 npx expo start
@@ -57,20 +63,24 @@ Expo Requirements:
     Enable local network access
 
 Create .env:
+
 ENV=http://localhost:8000/api
 
 🧠 3. Backend API (Laravel with Sail)
 
 Start with Sail (Docker):
+
 ./vendor/bin/sail up -d
 
 Or force recreate:
+
 ./vendor/bin/sail up --force-recreate -d
 
 
 ⚙️ Backend Environment Setup
 
 Create your .env file and configure like so:
+
 <details> <summary>Example .env (Click to expand)</summary>
 
 APP_NAME=Laravel
@@ -127,11 +137,13 @@ CLOUDFLARE_BUCKET_NAME=eventimages
 🔐 Note: Never commit real credentials. Use .env.example for sharing environment config templates.
 
 🧱 Run Migrations
+
 ./vendor/bin/sail artisan migrate
 
 🌱 Run Seeders
 
 Run all default seeders:
+
 ./vendor/bin/sail artisan db:seed
 
 Includes:
@@ -145,6 +157,7 @@ Includes:
     UserRolesSeeder
 
 Run individual seeders if needed:
+
 ./vendor/bin/sail artisan db:seed --class=UserRolesSeeder
 
 🧪 Run Backend Tests

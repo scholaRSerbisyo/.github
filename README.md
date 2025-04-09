@@ -250,3 +250,7 @@ Run individual seeders if needed:
 ```bash
 ./vendor/bin/sail artisan db:seed --class=UserRolesSeeder
 ```
+
+---
+
+Use the request.rest file for the test datas (e.g., Schools, Baranggays and such)

@@ -89,10 +89,17 @@ npx expo start
 - Install **Expo Go** on your device (App Store / Play Store)
 - Enable **local network access**
 
-Create `.env`:
+Locate your wifi or LAN IP address for the API_URL
+example - 192.168.1.139
 
-```env
-ENV=http://localhost:8000/api
+use it to the constants
+
+Locate and Modify the `constants.tsx` file from the constants folder:
+
+```constants.tsx
+const API_URL = {wifi or LAN ip-address}:8000/api;
+
+export default API_URL;
 ```
 
 ---
@@ -103,6 +110,12 @@ Install Composer:
 
 ```bash
 composer install
+```
+
+Install sanctum using composer
+
+```bash
+composer require laravel/sanctum
 ```
 
 Start with Sail (Docker):
@@ -236,12 +249,4 @@ Run individual seeders if needed:
 
 ```bash
 ./vendor/bin/sail artisan db:seed --class=UserRolesSeeder
-```
-
----
-
-## 🧪 Run Backend Tests
-
-```bash
-./vendor/bin/sail artisan test
 ```
